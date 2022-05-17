@@ -6,23 +6,30 @@ body{
 }
 
 h1{
-    margin-left: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 #div_posicao{
+    width: 8%;
     display: flex;
-    justify-content:right;
+    justify-content: flex-end;
+    float: left;
     position: absolute;
     top: 30%;
-    left:90%;
+    left:10%;
     background-color: white;
     border-radius: 10px;
 }
 
 #div_numeros{
+    width: 8%;
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
+    align-items: flex-start;
     top: 30%;
-    left: 3.5%;
+    left: 1%;
     background-color: white;
     border-radius: 10px;
 }
@@ -33,8 +40,7 @@ table{
     display: flex;
     margin-left: 50px;
     margin-left: 10px;
-    
-
+    justify-content: center;
 }
 
 .col-a{
@@ -52,7 +58,7 @@ table{
     z-index: 100;
     margin-left: -4px;
     text-transform: uppercase;
-
+    padding-left: 10px;
 }
 
 .container {
@@ -65,37 +71,22 @@ table{
     margin: 0;
 }
 
+.errado{
+    border:1px solid red;
+}
 
+.certo{
+    border: 1px solid green;
+}
 
-
-
-
-/* .container{ 
-    height: 100vh;
+.dicas{
+    height: 50vh;
     width: 100vw;
-}
-
-.palavra_ula {
-    height: 20vh;
-    width: 5.26vw;
+    border-radius: 3px;
     display: flex;
-    flex-direction: column;
-    margin-left: 60vw;
-}
-
-.palavra_ula input{
-    height: 10vw;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3vw;
-    padding-left: 1.8vw;
-}
-
-.palavra_cs{
-    height: 13.73vh;
-    width: 5vw;
-    display: flex;
-    flex-direction: column;
-    margin-left: 25.9vw;
-    margin-top: -13.4vh;
-    float: left;
+    justify-content: center;
+    background-color: white;
+    font-size: 20px;
+    margin-top: 15%;
+    padding-top: 3%;
 }

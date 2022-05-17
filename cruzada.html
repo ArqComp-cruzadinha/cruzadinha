@@ -1,4 +1,4 @@
-<!DOCid html>
+<!DOCtype html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>Palavras Cruzadas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="validar()">
 
     <h1>Cruzada</h1>
     
@@ -29,7 +29,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="1" type="text" id="input_ula_u" class="template" maxlength="1"></td>
+            <td> <input placeholder="1 ↴" type="text" id="input_ula_u" class="template" maxlength="1"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -55,7 +55,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="2" type="text" id="input_cs_c" class="template" maxlength="1"></td>
+            <td> <input placeholder="2 ↴" type="text" id="input_cs_c" class="template" maxlength="1"></td>
             <td></td>
         </tr>
 
@@ -70,7 +70,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" placeholder="3" id="input_databus_d" class="template" maxlength="1"></td>
+            <td> <input type="text" placeholder="3↴→" id="input_databus_d" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_databus_a" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_databus_t" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_databus_a2" class="template" maxlength="1"></td>
@@ -111,7 +111,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><input placeholder="5" type="text" id="input_ram_r" class="template" maxlength="1"></td>
+            <td><input placeholder="5→" type="text" id="input_ram_r" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_ram_a" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_ram_m" class="template" maxlength="1"></td>
             <td></td>
@@ -135,7 +135,7 @@
             <td></td>
             <td> <input type="text" id="input_dual_l" class="template" maxlength="1"></td>
             <td></td>
-            <td> <input placeholder="6" type="text" id="input_quadcore_q" class="template" maxlength="1"></td>
+            <td> <input placeholder="6 ↴" type="text" id="input_quadcore_q" class="template" maxlength="1"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -154,7 +154,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="7" type="text" id="input_cpu_c" class="template" maxlength="1"></td>
+            <td> <input placeholder="7→" type="text" id="input_cpu_c" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_cpu_p" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_cpu_u" class="template" maxlength="1"></td>
             <td></td>
@@ -221,7 +221,7 @@
             <td></td>
             <td> <input type="text" id="input_quadcore_c" class="template" maxlength="1"></td>
             <td></td>
-            <td> <input placeholder="8" type="text" id="input_flash_f" class="template" maxlength="1"></td>
+            <td> <input placeholder="8 ↴" type="text" id="input_flash_f" class="template" maxlength="1"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -237,7 +237,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="9" type="text" id="input_dma_d" class="template" maxlength="1"></td>
+            <td> <input placeholder="9 ↴" type="text" id="input_dma_d" class="template" maxlength="1"></td>
             <td></td>
             <td></td>
             <td> <input type="text" id="input_quadcore_o" class="template" maxlength="1"></td>
@@ -279,9 +279,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="10" type="text" id="input_adressbus_a" class="template" maxlength="1"></td>
+            <td> <input placeholder="10→" type="text" id="input_adressbus_a" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_adressbus_d" class="template" maxlength="1"></td>
-            <td> <input  placeholder="11" type="text" id="input_adressbus_r" class="template" maxlength="1"></td>
+            <td> <input  placeholder="11 ↴" type="text" id="input_adressbus_r" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_adressbus_e" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_adressbus_s" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_adressbus_s2" class="template" maxlength="1"></td>
@@ -298,7 +298,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="12" type="text" id="input_memoria_m" class="template" maxlength="1"></td>
+            <td> <input placeholder="12 ↴" type="text" id="input_memoria_m" class="template" maxlength="1"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -501,7 +501,7 @@
             <td> <input placeholder="14→" type="text" id="input_registradores_r" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_registradores_e" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_registradores_g" class="template" maxlength="1"></td>
-            <td> <input placeholder="16" type="text" id="input_registradores_i" class="template" maxlength="1"></td>
+            <td> <input placeholder="16 ↴" type="text" id="input_registradores_i" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_registradores_s" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_registradores_t" class="template" maxlength="1"></td>
             <td> <input type="text" id="input_registradores_r2" class="template" maxlength="1"></td>
@@ -589,7 +589,7 @@
         <div id="div_posicao"> 
             
             <h4>Verticais</h4>
-            <h5>
+            <h5> <br>
                 1. <br>
                 2. <br>
                 3. <br>
@@ -604,7 +604,7 @@
     
         <div id="div_numeros">
             <h4>Horizontais</h4>
-            <h5>
+            <h5> <br>
             3. <br>
             5. <br>
             7. <br>
@@ -619,5 +619,130 @@
 
 
     </div>
+
+    
+
+    <div id="div_dicas" class="dicas">
+
+        <h3>Dicas:</h3>
+        <h4> <br>
+        1. É um circuito combinatório responsável pela execução de somas, subtrações e funções lógicas, em um sistema digital. <br>
+
+        2. É uma linha de controle na eletrônica digital usada para selecionar um dos circuitos integrados dentre vários conectados ao mesmo barramento de computador, geralmente utilizando a lógica de três estados. <br>
+
+        3. Qualquer processador que possui dois núcleos. / via elétrica usada para transferir dados entre componentes de um computador. <br>
+
+        5. É um tipo de tecnologia que permite o acesso aos arquivos armazenados no computador. <br>
+
+        6. É um tipo de processador que comporta quatro núcleos de processamento de dados. <br>
+
+        7. Item de hardware do computador, que também é conhecido como processador. <br>
+
+        8. Consiste em inserir as informações digitais em chips de estado sólido, como em pen drives, ao invés discos rígidos giratórios. <br>
+
+        9. É um recurso da placa mãe que capacita os periféricos a terem acesso direto à memória RAM, sem sobrecarregarem o processador. <br>
+
+        10. Uma dada localização de memória. Largura do barramento determina a capacidade máxima da memória do sistema. <br>
+
+        11. Permite a gravação de dados uma única vez, não sendo possível apagar ou editar nenhuma informação, somente acessar a mesma. <br>
+
+        12. Também conhecida como memória auxiliar ou armazenamento de massa, tem como função armazenar grandes quantidades de informações. <br>
+
+        13. É capaz de armazenar as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter sido interrompida. <br>
+
+        14. São circuitos digitais capazes de armazenar e deslocar informações binárias, e são tipicamente usados como um dispositivo de armazenamento temporário. <br>
+
+        15. Faz parte das séries de processadores da Intel, tanto para desktop quanto para notebooks. <br>
+
+        16. É uma das séries de processadores para desktops e notebooks da Intel. </h4> <br>
+    </div>
+
 </body>
 </html>
+
+<script>
+
+function validar(){
+
+var ula_u= input_ula_u.value
+var ula_l= input_ula_l.value
+var cs_c= input_cs_c.value
+var databus_d= input_databus_d.value
+var databus_a= input_databus_a.value
+var databus_t= input_databus_t.value
+var databus_a2= input_databus_a2.value
+var databus_b= input_databus_b.value
+var databus_u= input_databus_u.value
+var databus_s= input_databus_s.value
+var dual_u= input_dual_u.value
+var ram_r= input_ram_r.value
+var ram_a= input_ram_a.value
+var ram_m= input_ram_m.value
+var dual_l= input_dual_l.value
+var quadcore_q= input_quadcore_q.value
+var cpu_c= input_cpu_c.value
+var cpu_p= input_cpu_p.value
+var cpu_u= input_cpu_u.value
+var dual_o= input_dual_o.value
+var quadcore_a= input_quadcore_a.value
+var dual_r= input_dual_r.value
+var quadcore_d= input_quadcore_d.value
+var dual_e= input_dual_e.value
+var quadcore_c= input_quadcore_c.value
+var flash_f= input_flash_f.value
+var dma_d= input_dma_d.value
+var quadcore_o= input_quadcore_o.value
+var flash_l= input_flash_l.value
+var dma_m= input_dma_m.value
+var quadcore_r= input_quadcore_r.value
+var flash_a= input_flash_a.value
+var adressbus_a= input_adressbus_a.value
+var adressbus_d= input_adressbus_d.value
+var adressbus_r= input_adressbus_r.value
+var adressbus_e= input_adressbus_e.value
+var adressbus_s= input_adressbus_s.value
+var adressbus_s2= input_adressbus_s2.value
+var adressbus_b= input_adressbus_b.value
+var adressbus_u= input_adressbus_u.value
+var adressbus_s3= input_adressbus_s3.value
+var memoria_m= input_memoria_m.value
+var rom_o= input_rom_o.value
+var flash_h= input_flash_h.value
+var eprom_e= input_eprom_e.value
+var eprom_p= input_eprom_p.value
+var eprom_r= input_eprom_r.value
+var eprom_o= input_eprom_o.value
+var eprom_m= input_eprom_m.value
+var memoria_m2= input_memoria_m2.value
+var memoria_o= input_memoria_o.value
+var memoria_r= input_memoria_r.value
+var memoria_i= input_memoria_i.value
+var i7_7= input_i7_7.value
+var memoria_a= input_memoria_a.value
+var memoria_d= input_memoria_d.value
+var memoria_e= input_memoria_e.value
+var massa_m= input_massa_m.value
+var registradores_r= input_registradores_r.value
+var registradores_e= input_registradores_e.value
+var registradores_g= input_registradores_g.value
+var registradores_i= input_registradores_i.value
+var registradores_s= input_registradores_s.value
+var registradores_t= input_registradores_t.value
+var registradores_r2= input_registradores_r2.value
+var registradores_a= input_registradores_a.value
+var registradores_d= input_registradores_d.value
+var registradores_o= input_registradores_o.value
+var registradores_r3= input_registradores_r3.value
+var registradores_e2= input_registradores_e2.value
+var registradores_s2= input_registradores_s2.value
+var i5_5= input_i5_5.value
+var massa_s= input_massa_s.value
+var massa_s2= input_massa_s2.value
+var massa_a2= input_massa_a2.value
+
+if (adressbus_b == "B"){
+    adressbus_b.classList.add('certo')
+}
+    }
+
+</script>
