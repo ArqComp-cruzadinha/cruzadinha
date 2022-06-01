@@ -35,8 +35,8 @@ h1{
 }
 
 table{
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 80%;
     display: flex;
     margin-left: 50px;
     margin-left: 10px;
@@ -80,8 +80,8 @@ table{
 }
 
 .dicas{
-    height: 50vh;
-    width: 100vw;
+    height: 80%;
+    width: 100%;
     border-radius: 3px;
     display: flex;
     justify-content: center;
@@ -89,4 +89,10 @@ table{
     font-size: 20px;
     margin-top: 15%;
     padding-top: 3%;
+}
+
+h6{
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 10px;
 }

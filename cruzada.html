@@ -7,7 +7,7 @@
     <title>Palavras Cruzadas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="validar()">
+<body>
 
     <h1>Cruzada</h1>
     
@@ -29,7 +29,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="1 ↴" type="text" id="input_ula_u" class="template" maxlength="1"></td>
+            <td> <input placeholder="1 ↴" type="text" id="input_ula_u" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -50,33 +50,12 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><input type="text" id="input_ula_l" class="template" maxlength="1"></td>
+            <td><input type="text" id="input_ula_l" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="2 ↴" type="text" id="input_cs_c" class="template" maxlength="1"></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input type="text" placeholder="3↴→" id="input_databus_d" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_databus_a" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_databus_t" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_databus_a2" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_databus_b" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_databus_u" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_databus_s" class="template" maxlength="1"></td>
+            <td> <input placeholder="2 ↴" type="text" id="input_cs_c" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
         </tr>
 
@@ -91,13 +70,13 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" id="input_dual_u" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td> <input type="text" placeholder="3↴→" id="input_databus_d" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_databus_a" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_databus_t" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_databus_a2" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_databus_b" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_databus_u" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_databus_s" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
         </tr>
 
@@ -111,9 +90,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><input placeholder="5→" type="text" id="input_ram_r" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_ram_a" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_ram_m" class="template" maxlength="1"></td>
+            <td></td>
+            <td> <input type="text" id="input_dual_u" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -132,10 +111,31 @@
             <td></td>
             <td></td>
             <td></td>
+            <td><input placeholder="5→" type="text" id="input_ram_r" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_ram_a" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_ram_m" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td> <input type="text" id="input_dual_l" class="template" maxlength="1"></td>
             <td></td>
-            <td> <input placeholder="6 ↴" type="text" id="input_quadcore_q" class="template" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <input type="text" id="input_dual_l" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td> <input placeholder="6 ↴" type="text" id="input_quadcore_q" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -154,9 +154,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="7→" type="text" id="input_cpu_c" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_cpu_p" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_cpu_u" class="template" maxlength="1"></td>
+            <td> <input placeholder="7→" type="text" id="input_cpu_c" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_cpu_p" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_cpu_u" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -175,30 +175,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" id="input_dual_o" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_dual_o" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td> <input type="text" id="input_quadcore_a" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input  type="text" id="input_dual_r" class="template" maxlength="1"></td>
-            <td></td>
-            <td> <input type="text" id="input_quadcore_d" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_quadcore_a" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -217,11 +196,11 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text"  id="input_dual_e" class="template" maxlength="1"></td>
+            <td> <input  type="text" id="input_dual_r" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td> <input type="text" id="input_quadcore_c" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_quadcore_d" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td> <input placeholder="8 ↴" type="text" id="input_flash_f" class="template" maxlength="1"></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -237,33 +216,12 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="9 ↴" type="text" id="input_dma_d" class="template" maxlength="1"></td>
             <td></td>
+            <td> <input type="text"  id="input_dual_e" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td> <input type="text" id="input_quadcore_o" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_quadcore_c" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td> <input type="text" id="input_flash_l" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input  type="text" id="input_dma_m" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td> <input type="text" id="input_quadcore_r" class="template" maxlength="1"></td>
-            <td></td>
-            <td> <input type="text" id="input_flash_a" class="template" maxlength="1"></td>
+            <td> <input placeholder="8 ↴" type="text" id="input_flash_f" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -279,33 +237,12 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="10→" type="text" id="input_adressbus_a" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_adressbus_d" class="template" maxlength="1"></td>
-            <td> <input  placeholder="11 ↴" type="text" id="input_adressbus_r" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_adressbus_e" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_adressbus_s" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_adressbus_s2" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_adressbus_b" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_adressbus_u" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_adressbus_s3" class="template" maxlength="1"></td>
-        </tr>
-        
-        <tr>
+            <td> <input placeholder="9 ↴" type="text" id="input_dma_d" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
+            <td> <input type="text" id="input_quadcore_o" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input placeholder="12 ↴" type="text" id="input_memoria_m" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input type="text" id="input_rom_o" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td> <input type="text" id="input_flash_h" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_flash_l" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -319,35 +256,14 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="13→" type="text" id="input_eprom_e" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_eprom_p" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_eprom_r" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_eprom_o" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_eprom_m" class="template" maxlength="1"></td>
             <td></td>
             <td></td>
+            <td> <input  type="text" id="input_dma_m" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
+            <td> <input type="text" id="input_quadcore_r" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
-            <td></td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input type="text" id="input_memoria_m2" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td> <input type="text" id="input_flash_a" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -361,11 +277,53 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" id="input_memoria_o" class="template" maxlength="1"></td>
+            <td></td>
+            <td></td>
+            <td> <input placeholder="10→" type="text" id="input_adressbus_a" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_adressbus_d" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input  placeholder="11 ↴" type="text" id="input_adressbus_r" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_adressbus_e" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_adressbus_s" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_adressbus_s2" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_adressbus_b" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_adressbus_u" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_adressbus_s3" class="template" maxlength="1" onchange="validar()"></td>
+        </tr>
+        
+        <tr>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <input placeholder="12 ↴" type="text" id="input_memoria_m" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <input type="text" id="input_rom_o" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td> <input type="text" id="input_flash_h" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <input placeholder="13→" type="text" id="input_eprom_e" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_eprom_p" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_eprom_r" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_eprom_o" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_eprom_m" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -382,7 +340,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" type="text" id="input_memoria_r" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_memoria_m2" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -403,25 +361,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input placeholder="15→" type="text" id="input_memoria_i" class="template" maxlength="1"></td>
-            <td> <input  type="text" id="input_i7_7" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input type="text" id="input_memoria_a" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_memoria_o" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -442,7 +382,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" id="input_memoria_d" class="template" maxlength="1"></td>
+            <td> <input type="text" type="text" id="input_memoria_r" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -463,7 +403,25 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" id="input_memoria_e" class="template" maxlength="1"></td>
+            <td> <input placeholder="15→" type="text" id="input_memoria_i" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input  type="text" id="input_i7_7" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <input type="text" id="input_memoria_a" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -484,49 +442,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" id="input_massa_m" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        
-        <tr>
-            <td> <input placeholder="14→" type="text" id="input_registradores_r" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_e" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_g" class="template" maxlength="1"></td>
-            <td> <input placeholder="16 ↴" type="text" id="input_registradores_i" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_s" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_t" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_r2" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_a" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_d" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_o" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_r3" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_e2" class="template" maxlength="1"></td>
-            <td> <input type="text" id="input_registradores_s2" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> <input  type="text" id="input_i5_5" class="template" maxlength="1"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><input type="text" id="input_massa_s" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_memoria_d" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -547,7 +463,91 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><input type="text" id="input_massa_s2" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_memoria_e" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <input type="text" id="input_massa_m" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td> <input placeholder="14→" type="text" id="input_registradores_r" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_e" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_g" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input placeholder="16 ↴" type="text" id="input_registradores_i" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_s" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_t" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_r2" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_a" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_d" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_o" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_r3" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_e2" class="template" maxlength="1" onchange="validar()"></td>
+            <td> <input type="text" id="input_registradores_s2" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <input  type="text" id="input_i5_5" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="input_massa_s" class="template" maxlength="1" onchange="validar()"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" id="input_massa_s2" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -568,7 +568,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td> <input type="text" id="input_massa_a2" class="template" maxlength="1"></td>
+            <td> <input type="text" id="input_massa_a2" class="template" maxlength="1" onchange="validar()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -655,6 +655,9 @@
         15. Faz parte das séries de processadores da Intel, tanto para desktop quanto para notebooks. <br>
 
         16. É uma das séries de processadores para desktops e notebooks da Intel. </h4> <br>
+
+        <h6>1-ula 2-cs 3-dualcore 3-databus 5-ram 6-quadcore 7-cpu 8-flash 9-dma 10-adressbus 11-rom 12-memoriademassa 13-eprom 14-registradores 16-i5 17-i7</h6>
+        
     </div>
 
 </body>
@@ -740,8 +743,27 @@ var massa_s= input_massa_s.value
 var massa_s2= input_massa_s2.value
 var massa_a2= input_massa_a2.value
 
-if (adressbus_b == "B"){
-    adressbus_b.classList.add('certo')
+if (adressbus_a == "A"&&
+    adressbus_d == "D" &&
+    adressbus_r == "R" &&
+    adressbus_e == "E" &&
+    adressbus_s == "S" &&
+    adressbus_s2 == "S" &&
+    adressbus_b == "B" &&
+    adressbus_u  == "U" &&
+    adressbus_s3 == "S")
+
+    {
+    adressbus_b.style.backgroundColor = 'green'
+    adressbus_a.style.backgroundColor = 'green' 
+    adressbus_d.style.backgroundColor = 'green' 
+    adressbus_r.style.backgroundColor = 'green'
+    adressbus_e.style.backgroundColor = 'green' 
+    adressbus_s.style.backgroundColor = 'green' 
+    adressbus_s2.style.backgroundColor = 'green' 
+    adressbus_b.style.backgroundColor = 'green' 
+    adressbus_u.style.backgroundColor = 'green'  
+    adressbus_s3.style.backgroundColor = 'green'   
 }
     }
 
